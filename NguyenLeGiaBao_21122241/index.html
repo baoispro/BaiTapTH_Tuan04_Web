@@ -6,21 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/5c5719b5ba.js" crossorigin="anonymous"></script>
     <style>
-        html {
-            height: 100%;
-        }
-        
-        body {
-            height: 100%;
+        * {
             margin: 0;
+            padding: 0;
         }
-        
+
+        .colorPink {
+            color: #e34d73;
+            border: #e34d73 solid 1px;
+            border-radius: 20px;
+            padding: 14px 27px;
+        }
+
+        .user {
+            color: white;
+            background-color: #76777a;
+            border-radius: 5px;
+            padding: 14px 10px;
+        }
+
+        .width30percent {
+            width: 30%;
+        }
+
         #wrapper {
             display: flex;
-            height: 100%;
         }
-        
+
         #panel {
             display: flex;
             flex-direction: column;
@@ -29,7 +43,7 @@
             width: 6%;
             border-right: gray groove 1px;
         }
-        
+
         #panel_header {
             display: flex;
             flex-direction: column;
@@ -37,22 +51,67 @@
             align-items: center;
             height: 60%;
         }
-        
+
         #panel_footer {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
         }
-        
+
         #content {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: space-around;
+            width: 67%;
+            border-right: gray groove 1px;
         }
-        
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 91%;
+        }
+
+        #container>div {
+            margin: 20px 0px;
+        }
+
         .title {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #calendar {
+            display: flex;
+            align-items: center;
+        }
+
+        #small_pic {
+            display: flex;
+            justify-content: space-between;
+            height: 150px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        #buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 65%;
+        }
+
+        button {
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 14px 27px;
         }
     </style>
 </head>
@@ -74,15 +133,58 @@
                 <div><img src="images/panel/setting.png " alt=" "></div>
             </div>
         </div>
-        <div id="content ">
-            <div class="title ">
-                <h3>Meeting title</h3>
-                <button>&CircleDot;</button>
+        <div id="content">
+            <div id="container">
+                <div class="title ">
+                    <h1>Meeting title</h1>
+                    <h3 class="colorPink">&#9679; 12:00</h3>
+                </div>
+                <div id="calendar">
+                    <p class="colorPink"
+                        style="color: white; background-color: #e34d73; padding: 8px 15px; margin-right: 20px;"><i
+                            class='far fa-user-circle'></i> Internal</p>
+                    <img style="margin-right: 10px;" src="images/calender_small.png" alt="">
+                    <p style="margin-right: 10px; padding-right: 10px; border-right: gray groove 1px;">Sep 02, 2022</p>
+                    <p>08:00 - 09:00 AM</p>
+                </div>
+                <div>
+                    <img style="width: 100%; position: relative;" src="images/content/img_big.png" alt="">
+                    <img style="position: absolute; right: 32%; top:200px" src="images/mic_color.png" alt="">
+                    <p style="position: absolute; top:200px; left: 12%;" class="user"><i
+                            style="color: #1dd75b;">&#9679;</i> Bejamin Crawford</p>
+                </div>
+                <div id="small_pic">
+                    <div style="position: relative; width: 30%;">
+                        <img style="position: absolute; width: 100%;" class="width30percent" src="images/img2.png" alt="">
+                        <img style="position: absolute; left: 80%; top:5%; width: 15%;" src="images/mic_grey_color.png" alt="">
+                        <p style="position: absolute; font-size: 10px;padding: 5px;left: 3%; top:5%;" class="user"><i
+                                style="color: #1dd75b;">&#9679;</i> Christian Scott</p>
+                    </div>
+                    <div style="position: relative; width: 30%;">
+                        <img style="position: absolute; width: 100%;" class="width30percent" src="images/img1.png" alt="">
+                        <img style="position: absolute; left: 80%; top:5%; width: 15%;" src="images/mic_grey_color.png" alt="">
+                        <p style="position: absolute; font-size: 10px;padding: 5px;left: 3%; top:5%;" class="user"><i
+                                style="color: #1dd75b;">&#9679;</i> Deborah Chu</p>
+                    </div>
+                    <div style="position: relative; width: 30%;">
+                        <img style="position: absolute; width: 100%;" class="width30percent" src="images/img.png" alt="">
+                        <img style="position: absolute; left: 80%; top:5%; width: 15%;" src="images/mic_grey_color.png" alt="">
+                        <p style="position: absolute; font-size: 10px;padding: 5px;left: 3%; top:5%;" class="user"><i
+                                style="color: #1dd75b;">&#9679;</i> Jordan Nieves</p>
+                    </div>
+                </div>
+                <div class="center">
+                    <div id="buttons">
+                        <img src="images/mic_grey_color.png" alt="">
+                        <img src="images/cam_color.png" alt="">
+                        <img src="images/speaker_grey_color.png" alt="">
+                        <button>End meeting</button>
+                        <img src="images/Button 2179.png" alt="">
+                        <img src="images/share.png" alt="">
+                        <img src="images/threeDots.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div>b</div>
-            <div>c</div>
-            <div>d</div>
-            <div>e</div>
         </div>
         <div id="chatbox ">c</div>
     </div>
