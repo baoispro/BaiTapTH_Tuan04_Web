@@ -90,7 +90,6 @@
         #small_pic {
             display: flex;
             justify-content: space-between;
-            height: 150px;
         }
 
         .center {
@@ -112,6 +111,25 @@
             border-radius: 3px;
             font-weight: bold;
             padding: 14px 27px;
+        }
+
+        #chatbox {
+            display: flex;
+            flex-direction: column;
+            width: 27%;
+        }
+
+        #participants {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .twoCol {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
@@ -143,50 +161,111 @@
                     <p class="colorPink"
                         style="color: white; background-color: #e34d73; padding: 8px 15px; margin-right: 20px;"><i
                             class='far fa-user-circle'></i> Internal</p>
-                    <img style="margin-right: 10px;" src="images/calender_small.png" alt="">
+                    <img style="margin-right: 10px;" src="images/content/calender_small.png" alt="">
                     <p style="margin-right: 10px; padding-right: 10px; border-right: gray groove 1px;">Sep 02, 2022</p>
                     <p>08:00 - 09:00 AM</p>
                 </div>
                 <div>
                     <img style="width: 100%; position: relative;" src="images/content/img_big.png" alt="">
-                    <img style="position: absolute; right: 32%; top:200px" src="images/mic_color.png" alt="">
+                    <img style="position: absolute; right: 32%; top:200px" src="images/content/mic_color.png" alt="">
                     <p style="position: absolute; top:200px; left: 12%;" class="user"><i
                             style="color: #1dd75b;">&#9679;</i> Bejamin Crawford</p>
                 </div>
                 <div id="small_pic">
                     <div style="position: relative; width: 30%;">
-                        <img style="position: absolute; width: 100%;" class="width30percent" src="images/img2.png" alt="">
-                        <img style="position: absolute; left: 80%; top:5%; width: 15%;" src="images/mic_grey_color.png" alt="">
+                        <img style="width: 100%;" class="width30percent" src="images/content/img2.png" alt="">
+                        <img style="position: absolute; left: 86%; top:5%; width: 10%;"
+                            src="images/content/mic_grey_color.png" alt="">
                         <p style="position: absolute; font-size: 10px;padding: 5px;left: 3%; top:5%;" class="user"><i
                                 style="color: #1dd75b;">&#9679;</i> Christian Scott</p>
                     </div>
                     <div style="position: relative; width: 30%;">
-                        <img style="position: absolute; width: 100%;" class="width30percent" src="images/img1.png" alt="">
-                        <img style="position: absolute; left: 80%; top:5%; width: 15%;" src="images/mic_grey_color.png" alt="">
+                        <img style="width: 100%;" class="width30percent" src="images/content/img1.png" alt="">
+                        <img style="position: absolute; left: 86%; top:5%; width: 10%;"
+                            src="images/content/mic_grey_color.png" alt="">
                         <p style="position: absolute; font-size: 10px;padding: 5px;left: 3%; top:5%;" class="user"><i
                                 style="color: #1dd75b;">&#9679;</i> Deborah Chu</p>
                     </div>
                     <div style="position: relative; width: 30%;">
-                        <img style="position: absolute; width: 100%;" class="width30percent" src="images/img.png" alt="">
-                        <img style="position: absolute; left: 80%; top:5%; width: 15%;" src="images/mic_grey_color.png" alt="">
+                        <img style="width: 100%;" class="width30percent" src="images/content/img.png" alt="">
+                        <img style="position: absolute; left: 86%; top:5%; width: 10%;"
+                            src="images/content/mic_grey_color.png" alt="">
                         <p style="position: absolute; font-size: 10px;padding: 5px;left: 3%; top:5%;" class="user"><i
                                 style="color: #1dd75b;">&#9679;</i> Jordan Nieves</p>
                     </div>
                 </div>
                 <div class="center">
                     <div id="buttons">
-                        <img src="images/mic_grey_color.png" alt="">
-                        <img src="images/cam_color.png" alt="">
-                        <img src="images/speaker_grey_color.png" alt="">
+                        <img src="images/content/mic_grey_color.png" alt="">
+                        <img src="images/content/cam_color.png" alt="">
+                        <img src="images/content/speaker_grey_color.png" alt="">
                         <button>End meeting</button>
-                        <img src="images/Button 2179.png" alt="">
-                        <img src="images/share.png" alt="">
-                        <img src="images/threeDots.png" alt="">
+                        <img src="images/content/Button 2179.png" alt="">
+                        <img src="images/content/share.png" alt="">
+                        <img src="images/content/threeDots.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div id="chatbox ">c</div>
+        <div id="chatbox">
+            <div style="display: flex;height: 35%;justify-content: space-around;border-bottom: gray groove 1px;">
+                <div id="participants">
+                    <div class="twoCol">
+                        <h3>Participants <span style="background-color: #fdf2f4; color: #e34d73; padding: 5px; border-radius: 50%; font-weight: normal; font-size: 70%;">4</span></h3>
+                        <button style="background-color: white; color: #e34d73; border: #e34d73 solid 1px;">+ Add</button>
+                    </div>
+                    <div class="twoCol">
+                        <div style="display: flex; justify-content: space-between; align-items: center; width: 55%;">
+                            <img src="images/chatbox/avatar 1322.png" alt="">
+                            <p>Benjamin Crawford</p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 20%;">
+                            <img src="images/chatbox/mic1.png" alt="">
+                            <img src="images/chatbox/cam_small.png" alt="">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="twoCol">
+                        <div style="display: flex; justify-content: space-between; align-items: center; width: 55%;">
+                            <img src="images/chatbox/avatar 1323.png" alt="">
+                            <p>Benjamin Crawford</p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 20%;">
+                            <img src="images/chatbox/mic1.png" alt="">
+                            <img src="images/chatbox/cam_small.png" alt="">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="twoCol">
+                        <div style="display: flex; justify-content: space-between; align-items: center; width: 55%;">
+                            <img src="images/chatbox/avatar 1324.png" alt="">
+                            <p>Benjamin Crawford</p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 20%;">
+                            <img src="images/chatbox/mic2.png" alt="">
+                            <img src="images/chatbox/cam_small.png" alt="">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="twoCol">
+                        <div style="display: flex; justify-content: space-between; align-items: center; width: 55%;">
+                            <img src="images/chatbox/avatar 1325.png" alt="">
+                            <p>Benjamin Crawford</p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 20%;">
+                            <img src="images/chatbox/mic1.png" alt="">
+                            <img src="images/chatbox/cam_small.png" alt="">
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="chat">
+                <div style="display: flex;height: 35%;justify-content: space-around;">
+                    b
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
